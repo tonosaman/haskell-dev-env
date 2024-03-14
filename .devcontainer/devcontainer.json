@@ -7,7 +7,7 @@
       "USERNAME": "vscode",
       "GHC_VERSION": "9.6.3",
       "STACK_VERSION": "recommended",
-      "STACK_RESOLVER": "nightly",
+      "STACK_RESOLVER": "lts-21.20",
       "CABAL_VERSION": "recommended",
       "HLS_VERSION": "recommended",
       "LLVM_VERSION": "17"
