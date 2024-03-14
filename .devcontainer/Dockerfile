@@ -2,7 +2,7 @@ FROM debian:bookworm-slim as base
 
 ENV LANG C.UTF-8
 
-ARG GHC_VERSION=9.6.3
+ARG GHC_VERSION=recommended
 ARG STACK_VERSION=recommended
 ARG STACK_RESOLVER=nightly
 ARG CABAL_VERSION=recommended
@@ -89,11 +89,11 @@ RUN cabal install --haddock-hoogle --minimize-conflict-set \
     haskell-dap-0.0.16.0 \
     ghci-dap-0.0.22.0 \
     haskell-debug-adapter-0.0.39.0 \
-    hlint-3.6.1 \
+    hlint-3.8 \
     apply-refact-0.14.0.0 \
     retrie-1.2.2 \
     hoogle-5.0.18.3 \
-    ormolu-0.7.2.0
+    ormolu-0.7.4.0
 
 FROM packages as hoogle
 
